@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5256db</color>
+    <color name="colorPrimaryDark">#5256db</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bg">#5256db</color>
+    <color name="btnbg">#16bf00</color>
+    <color name="cardbg">#ededed</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="tab_disable">#979797</color>
+    <color name="tab_enable">#FFFFFF</color>
+    <color name="tab_checked">#f3cd70</color>
+    <color name="tab_unchecked">#FFFFFF</color>
+    <color name="bg_screen1">#fcfcfc</color>
+    <color name="bg_screen2">#fcfcfc</color>
+    <color name="bg_screen3">#fcfcfc</color>
+    <color name="bg_screen4">#fcfcfc</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#dedede</color>
+    <color name="dot_dark_screen2">#dedede</color>
+    <color name="dot_dark_screen3">#dedede</color>
+    <color name="dot_dark_screen4">#dedede</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f4f4f4</color>
+    <color name="dot_light_screen2">#f4f4f4</color>
+    <color name="dot_light_screen3">#f4f4f4</color>
+    <color name="dot_light_screen4">#f4f4f4</color>
+
+    <array name="array_dot_active">
+        <item>@color/bg</item>
+        <item>@color/bg</item>
+        <item>@color/bg</item>
+        <item>@color/bg</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="gray">#757575</color>
+    <color name="separator">#dedede</color>
+</resources>

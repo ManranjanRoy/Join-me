@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wolwou</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="dropbox_app_key">6rsx4clelvd9n7f</string>
+</resources>

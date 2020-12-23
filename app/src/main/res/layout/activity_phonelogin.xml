@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Activity.Phonelogin">
+    <ImageView
+        android:id="@+id/back"
+        android:padding="20dp"
+        android:src="@drawable/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/img0"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="You're Cute "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:text="Can I have your Number?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@drawable/roundedcorner"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:theme="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="14dp"
+                android:id="@+id/edittextmobileno"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:drawablePadding="20dp"
+                android:hint="Enter Your Valid Mobile Number"
+                android:drawableLeft="@drawable/ic_call_backgrounf_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedByDefault="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/sendotp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Send OTP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>

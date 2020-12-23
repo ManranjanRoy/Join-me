@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background"
+    tools:context=".Activity.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/r1"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <ImageView
+        android:id="@+id/meetinghistory"
+        android:paddingLeft="10dp"
+        android:src="@drawable/ic_outline_history_24pxwhite"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/user"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_outline_account_circle_24px"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/r1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="2dp"
+            android:background="@drawable/joincreatebacklayout"
+            android:layout_width="300dp"
+            android:layout_height="42dp">
+            <TextView
+                android:theme="@style/MaterialButton.SignIn"
+                android:id="@+id/joinneeting"
+                android:background="@drawable/jion_button_border"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="JOIN MEETING"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_weight="1"
+                android:theme="@style/MaterialButton.SignIn"
+                android:id="@+id/createmeeting"
+                android:gravity="center"
+                android:textColor="@color/tab_disable"
+                android:text="CREATE MEETING"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r2"
+        android:layout_marginTop="59dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/designimage"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/img1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/roundedcorner"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/etlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="14dp"
+                    android:maxLength="10"
+                    android:hint="Enter Meetting Code"
+                    android:id="@+id/etmeeting"
+                   android:drawableRight="@drawable/notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusedByDefault="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/et1layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:visibility="visible"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="14dp"
+                    android:maxLength="10"
+                    android:hint="Enter Code"
+                    android:id="@+id/etmeeting1"
+                    android:drawableRight="@drawable/ic_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusedByDefault="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+            <Button
+                android:theme="@style/MaterialButton.SignIn"
+                android:id="@+id/btnjoin"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:background="@color/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join"/>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Powered By"/>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/oyelearn"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/test"></include>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

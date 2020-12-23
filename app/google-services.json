@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1019683897836",
+    "firebase_url": "https://wolwou.firebaseio.com",
+    "project_id": "wolwou",
+    "storage_bucket": "wolwou.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019683897836:android:b6a8b5f7808b6428e900c9",
+        "android_client_info": {
+          "package_name": "com.manoranjan.wolwou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019683897836-25n36ri2gqr2hevt7k48k14jm80frdlb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manoranjan.wolwou",
+            "certificate_hash": "589eb693d0d996c77fbfb8a38466006a9749e720"
+          }
+        },
+        {
+          "client_id": "1019683897836-vtte06olkjbhct4qjsn0rhrkfnle4mdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoY-Qh3RtdxYmhJL59YiOZ18HweticFWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019683897836-vtte06olkjbhct4qjsn0rhrkfnle4mdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
